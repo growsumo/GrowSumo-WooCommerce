@@ -90,7 +90,7 @@ function growsumo_track_order( $order_id ){
         growsumo.data.name = '<?php echo $name ?>';
         growsumo.data.email = '<?php echo $email ?>';
         growsumo.data.customer_key = '<?php echo $customer_id ?>';
-        growsumo.data.amount = '<?php echo $amount ?>';
+        growsumo.data.amount = parseInt('<?php echo $amount ?>');
         growsumo.data.currency = '<?php echo $currency ?>';
 		growsumo.createSignup();
     }
