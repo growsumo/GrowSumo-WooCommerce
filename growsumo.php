@@ -26,7 +26,7 @@ if (is_admin()) {
 
 function growsumo_admin_menu() {
     // will create the admin menu if user has correct access
-    add_menu_page('GrowSumo', 'GrowSumo', 'manage_options', 'growsumo', 'growsumo_options_page', plugins_url( 'growsumo/images/logo.png'));
+    add_menu_page('GrowSumo', 'GrowSumo', 'manage_options', 'growsumo', 'growsumo_options_page', plugins_url( 'GrowSumo-WooCommerce-master/logo.png'));
 }
 
 function store_growsumo_company_key() {
@@ -35,7 +35,7 @@ function store_growsumo_company_key() {
 
 function growsumo_options_page() {
     // options page template
-    include(WP_PLUGIN_DIR.'/growsumo/options.php');
+    include(WP_PLUGIN_DIR.'/GrowSumo-WooCommerce-master/options.php');
 }
 
 function growsumo_admin_options_init() {
