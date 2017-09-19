@@ -102,6 +102,6 @@ register_activation_hook(__FILE__, 'store_growsumo_company_key');
 // attach GrowSumoJs to the snippet of each page
 add_action('wp_footer', 'growsumojs');
 // attach customer create function to woo commerce thankyou page
-add_action('woocommerce_thankyou_order_id', 'growsumo_track_order');
+add_action('woocommerce_thankyou', 'growsumo_track_order');
 // attach customer create function to wordpress user register
 ?>
